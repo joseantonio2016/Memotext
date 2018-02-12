@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style>
+/* Ocultar botón radio */
+input[id^="spoiler"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler"] + label {
+display: block;
+width: 200px;
+margin: 0 auto;
+padding: 5px 20px;
+background: #e1a;
+cursor: pointer;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label {
+color: #333;
+background: #ccc;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler"] ~ .spoiler {
+width: 90%;
+height: 0;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0; 
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<h1>Spoiler</h1>
+
+<input type="checkbox" id="spoiler1"></input>
+<label for="spoiler1">SPOILER</label>
+<div class="spoiler">CONTENIDO OCULTO</div>
+
+OTRO TIPO DE CONTENIDO
+<input type="checkbox" id="spoiler2"></input>
+<label for="spoiler2" >SPOILER</label>
+<div class="spoiler">CONTENIDO OCULTO</div>
+OTRO TIPO DE CONTENIDO
+
+</body>
+</html>

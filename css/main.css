@@ -1,0 +1,257 @@
+*{
+  /*margin:0px;
+  padding:0px;*/
+  font-family: helvetica;
+}
+
+html,body{
+  background-color: #DDDDDD;
+}
+
+.boton_1{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #006505;
+    background-color: #82b085;
+    border-radius: 10px;
+    border: 2px double #006505;
+    width: 200px;
+    margin: 5px;
+  }
+  .boton_1:hover{
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+
+h3 {
+  color: #555;
+  font-weight: 400;
+}
+.boton_plano{
+    text-decoration: none;
+    padding: 40px;
+    font-family: arial;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 800;
+    font-size: 25px;
+    color: black;
+    background-color: #9b0e0e;
+  }
+  .boton_plano:hover{
+    color: #9b0e0e;
+    background-color: #bc6355;
+    text-decoration: none;
+  }
+
+  input.enlace{
+    border:0; 
+    background-color:#fff;
+     text-decoration:underline;
+      color:#000; cursor:pointer;
+    }
+
+
+  
+  .panel-group a{outline:none;}
+.panel-heading{font-weight:bold;background:#f7f7f7;}
+.panel-collapse{background:#fff;}
+.panel-body{padding:10px;}
+.panel-heading .accordion-toggle:after{
+  content:"\f033";
+  float:right;}
+
+
+
+  input[type="text"]
+{
+    font-size:20px;
+    margin: 2px 2px 4px 2px;
+}
+input[type="image"]
+{
+    width: 32px;
+    height: 32px;
+    margin: 2px 2px 6px 2px;
+}
+
+#area
+{
+    border:2px solid green;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;  
+    border-radius:8px;  
+    margin: 10px;
+}
+
+#orige
+{
+    border:2px solid gray;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;  
+    border-radius:8px;  
+    margin: 10px;
+    padding: 5px;
+}
+
+label.sw{
+  border:0; 
+    background-color:#DDDDDD;
+      color:#000;
+}
+label.sw:hover{
+  border:0; 
+      color:#000;
+}
+
+
+#lblopen {
+   cursor: pointer;
+   /* Style as you please, it will become the visible UI component. */
+}
+#btnguardar,#openfile{
+  opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+
+textarea {
+  width: 98%;
+  height: 3em;
+  border: 3px solid #cccccc;
+  padding: 0.3em;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  /*background-image: url(bg.gif);*/
+  margin: 0.1em;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+/* Ocultar botón radio */
+input[id^="mf"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="mf"] + label {
+width: auto;
+background: #DDDDDD;
+cursor: pointer;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="mf"]:checked + label {
+color: #333;
+background: #BA9790;
+/*margin-right: -0.2em;-0.25em*/
+}
+
+input[id^="mf"]:hover + label {
+color: #333;
+background: #12F33E;
+}
+
+input[id^="mf"].transparente + label {
+width: auto;
+color: #C33111;
+background: #C33111;
+}
+input[id^="mf"].transparente:checked + label {
+color: #DDDDDD;
+background: #DDDDDD;
+}
+input[id^="mf"].transparente:hover + label {
+color: #1912F3;
+background: #1912F3;
+}
+input[id^="mf"].sinefecto + label, 
+input[id^="mf"].sinefecto:checked + label,
+input[id^="mf"].sinefecto:hover + label
+{
+width: auto;
+color: #333;
+background: #DDDDDD;
+cursor: default;
+}
+/*
+input[id^="mf"].sinefecto:checked + label {
+
+}
+input[id^="mf"].sinefecto:hover + label {
+}*/
+
+
+#uliste{
+  list-style-type:square
+}
+/*
+.transparente{
+  color: #DDDDDD;
+background: #DDDDDD;
+}
+fieldset { 
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+<form>
+  <fieldset>
+    <legend>Personalia:</legend>
+    Name: <input type="text"><br>
+    Email: <input type="text"><br>
+    Date of birth: <input type="text">
+  </fieldset>
+</form>
+Try it Yourself »
+
+.topic
+  {
+      position:absolute;
+      top:-1px;
+      left:-1px;
+      padding:3px 7px;
+      font-size:12px;
+      font-weight:bold;
+      background-color:#f5f5f5;
+      border:1px solid #ddd;
+      color:#9da0a4;
+      border-radius:4px 0 4px 0;
+  }
+
+
+
+/*
+#area {
+  align-items: center;
+  border: 3px dashed #aaa;
+  border-radius: 5px;
+  color: #555;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 15px;
+  height: 80vh;
+  justify-content: center;
+  max-height: 400px;
+  margin: 10px auto;
+  overflow: auto;
+  padding: 110px;
+  text-align: center;
+  white-space: pre-line;
+  width: 80%;
+  max-width: 600px;
+}*/
+
+*
