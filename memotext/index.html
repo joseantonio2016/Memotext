@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <title>MemoText</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/estiloswitch.css">
+  <link rel="stylesheet" href="css/estilorange.css">
+  <link rel="stylesheet" href="css/index_style.css">
+  <link rel="stylesheet" href="css/tabbedstyle.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+  <script defer src="js/subirtexto.js"></script>
+  <script defer src="js/sectionToggle.js"></script>
+  <link rel="stylesheet" href="css/form-field-tooltip.css" media="screen" type="text/css">
+  <script type="text/javascript" src="js/rounded-corners.js"></script>
+  <script type="text/javascript" src="js/form-field-tooltip.js"></script>
+  
+</head>
+  <body>
+<div>
+  <div id="divlateral">
+  <header><h1>MEMOTEX</h1></header>
+</div>
+      <h2 align="center">Memoriza texto f&aacute;cilmente</h2>
+</div>
+<div id="formulario">
+<form>
+    
+    <fieldset id="area" align="center">
+      
+      <label for="openfile" id="lblopen" title="Selecciona un archivo local de texto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" style="">
+          <image x="0" y="0" height="54" width="54"  xlink:href="img/choosefile.svg" />
+        </svg> <span></span>
+      </label>
+      <input type="file" id="openfile" accept="text/plain" />
+      
+
+      <label id="lblguardar" title="Guardar texto editado">
+        <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <image x="0" y="0" height="60" width="60"  xlink:href="img/save.svg" />
+        </svg>
+      </label>
+      <button id="btnguardar"></button>
+
+      <!--
+      <input type="submit" value="" width="5" id="btnguardar" style="background:url(img/saved.png) no-repeat; border:none; width:48px;  height:58px;" title="Guardar">-->
+    </fieldset>
+    
+    <fieldset id="orige" class="origec">
+      <textarea id="textarea1" placeholder="Escribe o arrastra un archivo de texto aqu&iacute;" tooltipText=""></textarea>
+    </fieldset>
+     
+
+  </form>
+  </div>
+  
+
+  <div class="tab">
+  <button class="tablinks" onclick="abrirTab(event, 'edit')">Edicion</button>
+  <button class="tablinks" onclick="abrirTab(event, 'eval')">Evaluacion</button>
+  <button onclick="cerrarTab()">Ocultar</button>
+</div>
+
+<div id="edit" class="tabcontent">
+  <label class="switch" >
+  <input class="switch-input" type="checkbox" id="idswitch"/>
+  <span class="switch-label" data-on="Unir" data-off="Elegir"></span> 
+  <span class="switch-handle"></span> 
+  </label>
+  
+  <div >
+    <ul id="uliste"> </ul>
+  </div>
+
+</div>
+
+<div id="eval" class="tabcontent">
+  
+  <input  type="submit" onclick="leveldific()" id="btnevaluar" value="Dificultad" class="boton_1">
+  <input type="range" class="ps6" max="6" min="1" value="1" size="50" id="leveldificultad">
+  <br>
+  <input type="submit" name="" id="btnevaluar" value="Evaluar" onclick="evalua()" class="boton_1">
+  <datalist id="url_list"> </datalist>
+</div>
+    
+  </body>
+</html>
+
